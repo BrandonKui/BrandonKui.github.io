@@ -42,7 +42,7 @@ function windowResized() {
     textAlign(CENTER)
     fill(255,0,255)
     textFont("Consolas")
-    text("ME :)", windowWidth/2, windowHeight/2)
+    text("Brandon Kui", windowWidth/2, windowHeight/2)
  //  NAME
   // PORTFOLIO
     fill(255,255,255) 
