@@ -40,7 +40,7 @@ function windowResized() {
   // NAME
     textSize(64)
     textAlign(CENTER)
-    fill(255,128,255)
+    fill(255,0,255)
     textFont("Consolas")
     text("Brandon Kui", windowWidth/2, windowHeight/2)
  //  NAME
@@ -96,8 +96,9 @@ function windowResized() {
     textAlign(CENTER)
     fill(255,255,255)
     text("Web preview coming soon™", windowWidth/2, (windowHeight/2)+0)
-    text("In the meantime, please click anywhere to return", windowWidth/2, (windowHeight/2)+50)
-    text("to the home screen, and click the link in 'About me'.", windowWidth/2, (windowHeight/2)+75)
+    text("In the meantime, please scroll down and", windowWidth/2, (windowHeight/2)+50)
+    text("download the .pdf by clicking 'portfolio' below.", windowWidth/2, (windowHeight/2)+75)
+    text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+100)
 
     // PORTFOLIO
 
@@ -136,7 +137,7 @@ function windowResized() {
     textSize(14)
     textAlign(CENTER)
     fill(0,0,0)
-    text("Click on 'About me' to reveal resume and portfolio download links.", windowWidth/2, (windowHeight/2)+0)
+    text("You can download a more in-depth resume by scrolling down and clicking on 'resume'.", windowWidth/2, (windowHeight/2)+0)
     text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+25)
     text("Graphic designer with a varied skillset. Currently studying at OCADU.", windowWidth/2, (windowHeight/2)+50)
     text("PROFICIENT", windowWidth/2, (windowHeight/2)+75)
@@ -205,15 +206,15 @@ function windowResized() {
     else if(state != "home" && pmouseX > (windowWidth/2)-100 && pmouseX < (windowWidth/2)+100 && pmouseY > (windowHeight/2)-100 && pmouseY <  (windowHeight/2)-50){
       // console.log("download")
       
-      if (state == "resume"){
+      // if (state == "resume"){
 
-          // so P5.js can't download pdfs :stare:
-        // REVEAL DOWNLOAD LINKS
-        resizeCanvas(windowWidth, windowHeight-50)
-        // REVEAL DOWNLOAD LINKS
+      //     // so P5.js can't download pdfs :stare:
+      //   // REVEAL DOWNLOAD LINKS
+      //   resizeCanvas(windowWidth, windowHeight-50)
+      //   // REVEAL DOWNLOAD LINKS
 
-
-      }
+      // }
+      // oops should've tested in chrome, don't need this
 
     }
     else{
