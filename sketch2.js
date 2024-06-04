@@ -96,7 +96,7 @@ function windowResized() {
     textAlign(CENTER)
     fill(255,255,255)
     text("Web preview coming soon™", windowWidth/2, (windowHeight/2)+0)
-    text("In the meantime, please scroll down and", windowWidth/2, (windowHeight/2)+50)
+    text("In the meantime, please scroll down and view or", windowWidth/2, (windowHeight/2)+50)
     text("download the .pdf by clicking 'portfolio' below.", windowWidth/2, (windowHeight/2)+75)
     text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+100)
 
@@ -137,7 +137,7 @@ function windowResized() {
     textSize(14)
     textAlign(CENTER)
     fill(0,0,0)
-    text("You can download a more in-depth resume by scrolling down and clicking on 'resume'.", windowWidth/2, (windowHeight/2)+0)
+    text("You can view or download a more in-depth resume by scrolling down and clicking on 'resume'.", windowWidth/2, (windowHeight/2)+0)
     text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+25)
     text("Graphic designer with a varied skillset. Currently studying at OCADU.", windowWidth/2, (windowHeight/2)+50)
     text("PROFICIENT", windowWidth/2, (windowHeight/2)+75)
