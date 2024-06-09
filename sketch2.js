@@ -5,11 +5,11 @@ var rightColor
 var rngValue1
 var rngValue2
 
-var Shotaro = [[0,0,0], [64,64,64], [64,128,255]]
+var Shotaro = [[0,0,0], [64,64,64], [32,64,128]]
 // in order, joker, metal, trigger
-var Phillip = [[64,192,128], [255,192,64], [255,64,0]]
-// in order, cyclone, luna, heat
-var randomNumberCache =[]
+var Phillip = [[64,192,128], [255,192,64], [255,255,255]]
+// in order, cyclone, luna, fang
+// var randomNumberCache =[]
 // needed to randomize numbers, since I'm generating 2 of them
 
 // TODO: create colour variants, add description to myself, add tts support
@@ -53,7 +53,7 @@ function windowResized() {
    // BACKGROUND
 //  HOMEPAGE
   if(state == "home"){
-
+  
   // RESET STRETCH
 
     stretch = windowWidth/2
@@ -64,7 +64,7 @@ function windowResized() {
     
     textSize(64)
     textAlign(CENTER)
-    fill(255,255,255)
+    fill(255,64,192)
     textFont("Consolas")
     text("Brandon Kui", windowWidth/2, windowHeight/2)
  //  NAME
@@ -72,9 +72,9 @@ function windowResized() {
     // DESCRIPTION
     textSize(16)
     textAlign(CENTER)
-    fill(255,255,255,192)
+    fill(255,0,255)
     textFont("Consolas")
-    text("Design Student", windowWidth/2, (windowHeight/2)+50)
+    text("Design Student", windowWidth/2, (windowHeight/2)+25)
     // DESCRIPTION
 
   // PORTFOLIO
@@ -253,10 +253,9 @@ function mouseClicked(){
     else{
       // console.log("click registered")
       state = "home"
+
       // RESET COLOURS
-
         doubleDriver()
-
       // RESET COLOURS
     }
     // click not registering hmmm
@@ -271,13 +270,13 @@ function doubleDriver(){
 // generates 2 random numbers, pushes into cache array
 rngValue1 = Math.floor((Math.random()*3))
 // let temp var rngvalue = rounded up number to nearest integer(((random number between 0 and 1)*10))
-console.log(rngValue1)
+// console.log(rngValue1)
 // randomNumberCache.push(rngValue)
 // for loop and cache method don't work, brute force instead
 rngValue2 = Math.floor((Math.random()*3))
 // let temp var rngvalue = rounded up number to nearest integer(((random number between 0 and 1)*10))
 // math is changed but logic is same
-console.log(rngValue2)
+// console.log(rngValue2)
 
 //}
 
