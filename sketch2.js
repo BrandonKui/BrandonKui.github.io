@@ -53,7 +53,7 @@ function windowResized() {
    // BACKGROUND
 //  HOMEPAGE
   if(state == "home"){
-  
+
   // RESET STRETCH
 
     stretch = windowWidth/2
@@ -253,6 +253,11 @@ function mouseClicked(){
     else{
       // console.log("click registered")
       state = "home"
+      // RESET COLOURS
+
+        doubleDriver()
+
+      // RESET COLOURS
     }
     // click not registering hmmm
     // hm the example has it outside the draw
@@ -279,8 +284,8 @@ console.log(rngValue2)
 leftColor = Phillip[rngValue1]
 rightColor = Shotaro[rngValue2]
 // sets colours as randomly generated position in array bank of colours
-console.log(leftColor, "left color")
-console.log(rightColor, "right color")
+  // console.log(leftColor, "left color")
+  // console.log(rightColor, "right color")
 // console.log(randomNumberCache)
 // PROBLEMS RN: pushing into cache isn't working at all, unless there's a preexisting item there
 // ALSO colours are being seperated by commas and NOT brackets
