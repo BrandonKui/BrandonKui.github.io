@@ -12,7 +12,7 @@ var Phillip = [[64,192,128], [255,192,64], [255,255,255]]
 // var randomNumberCache =[]
 // needed to randomize numbers, since I'm generating 2 of them
 
-// TODO: create colour variants, add description to myself, add tts support
+// TODO: web preview, clickable text
 
 function setup(){
 
@@ -67,6 +67,7 @@ function windowResized() {
     fill(255,64,192)
     textFont("Consolas")
     text("Brandon Kui", windowWidth/2, windowHeight/2)
+    describe("Brandon Kui, Design student")
  //  NAME
 
     // DESCRIPTION
@@ -82,6 +83,7 @@ function windowResized() {
     textSize(12)
     textAlign(LEFT)
     text('◀ Portfolio', 50, 50)
+    describe("Click here to go to portfolio")
   // PORTFOLIO
 
   // RESUME
@@ -89,6 +91,7 @@ function windowResized() {
     textSize(12)
     textAlign(RIGHT)
     text('About Me ▷', windowWidth-50, windowHeight-25)
+    describe("Click here to go to about me")
   // RESUME
     
   }
@@ -132,6 +135,7 @@ function windowResized() {
     text("In the meantime, please scroll down and view or", windowWidth/2, (windowHeight/2)+50)
     text("download the .pdf by clicking 'portfolio' below.", windowWidth/2, (windowHeight/2)+75)
     text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+100)
+    describe("web preview coming soon, please click the hyperlink below labeled portfolio to view a pdf")
 
     // PORTFOLIO
 
@@ -181,7 +185,7 @@ function windowResized() {
     text("Maya, Blender, Python", windowWidth/2, (windowHeight/2)+170)
     text("MISCELLANEOUS SKILLS", windowWidth/2, (windowHeight/2)+195)
     text("Photography, Traditional Illustration, Metal and Wood Fabrication", windowWidth/2, (windowHeight/2)+210)
-
+    describe("A graphic design student studying at OCAD U, proficient in the adobe suite, affinity suite, with various other design skills. Please click the hyperlink below to view a more detailed pdf")
     // ABOUT
   }
 
