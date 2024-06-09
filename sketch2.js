@@ -1,14 +1,37 @@
 var state = "home"
 var stretch 
+var leftColor
+var rightColor
+var rngValue1
+var rngValue2
+
+var Shotaro = [[0,0,0], [64,64,64], [64,128,255]]
+// in order, joker, metal, trigger
+var Phillip = [[64,192,128], [255,192,64], [255,64,0]]
+// in order, cyclone, luna, heat
+var randomNumberCache =[]
+// needed to randomize numbers, since I'm generating 2 of them
+
+// TODO: create colour variants, add description to myself, add tts support
 
 function setup(){
 
+    // CREATE CANVAS
     var canvas = createCanvas(windowWidth,windowHeight)
     // rect(0,0,windowWidth,windowHeight)
     background(255,255,255)
     stretch = windowWidth/2
+    // CREATE CANVAS
 
+    // DECLARE COLOR COMBO
+
+    doubleDriver()
+
+    // DECLARE COLOR COMBO
+
+    // PARENTING TO A DIV SUCH THAT I CAN POSITION IT
     canvas.parent("mainpage")
+    // PARENTING TO A DIV SUCH THAT I CAN POSITION IT
     
 };
 
@@ -21,9 +44,9 @@ function windowResized() {
  function draw(){
 
      // BACKGROUND
-     fill(0,0,0)
+     fill(rightColor)
      noStroke()
-     background(255,255,255)
+     background(leftColor)
      rect(0,0,stretch,windowHeight)
     //  console.log(stretch, "stretch")
     //  console.log(windowWidth/2, "window width")
@@ -38,12 +61,22 @@ function windowResized() {
   // RESET STRETCH
 
   // NAME
+    
     textSize(64)
     textAlign(CENTER)
-    fill(255,0,255)
+    fill(255,255,255)
     textFont("Consolas")
     text("Brandon Kui", windowWidth/2, windowHeight/2)
  //  NAME
+
+    // DESCRIPTION
+    textSize(16)
+    textAlign(CENTER)
+    fill(255,255,255,192)
+    textFont("Consolas")
+    text("Design Student", windowWidth/2, (windowHeight/2)+50)
+    // DESCRIPTION
+
   // PORTFOLIO
     fill(255,255,255) 
     textSize(12)
@@ -86,7 +119,7 @@ function windowResized() {
 
     textSize(48)
     textAlign(CENTER)
-    fill(255,0,255)
+    fill(255,255,255)
     text("PORTFOLIO", windowWidth/2, (windowHeight/2)-50)
 
     // TITLE
@@ -127,7 +160,7 @@ function windowResized() {
 
     textSize(48)
     textAlign(CENTER)
-    fill(255,0,255)
+    fill(0,0,0)
     text("ABOUT ME", windowWidth/2, (windowHeight/2)-50)
 
     // TITLE
@@ -185,8 +218,8 @@ function windowResized() {
  };
 // NOTES: PORTFOLIO X 300 Y 69 | RESUME windowWidth-260 X windowHeight-32 Y
 
-   // HITBOX
-   function mouseClicked(){
+// HITBOX
+function mouseClicked(){
 
     if(state == "home" && pmouseX <= 150 && pmouseY <= 75){
 
@@ -224,8 +257,41 @@ function windowResized() {
     // click not registering hmmm
     // hm the example has it outside the draw
     // fixed by doing that lol
-  }
-  // HITBOX
+}
+// HITBOX
+
+function doubleDriver(){
+
+//for (var i; i < 5; i++){
+// generates 2 random numbers, pushes into cache array
+rngValue1 = Math.floor((Math.random()*3))
+// let temp var rngvalue = rounded up number to nearest integer(((random number between 0 and 1)*10))
+console.log(rngValue1)
+// randomNumberCache.push(rngValue)
+// for loop and cache method don't work, brute force instead
+rngValue2 = Math.floor((Math.random()*3))
+// let temp var rngvalue = rounded up number to nearest integer(((random number between 0 and 1)*10))
+// math is changed but logic is same
+console.log(rngValue2)
+
+//}
+
+leftColor = Phillip[rngValue1]
+rightColor = Shotaro[rngValue2]
+// sets colours as randomly generated position in array bank of colours
+console.log(leftColor, "left color")
+console.log(rightColor, "right color")
+// console.log(randomNumberCache)
+// PROBLEMS RN: pushing into cache isn't working at all, unless there's a preexisting item there
+// ALSO colours are being seperated by commas and NOT brackets
+// SIMPLE SOLUTION is to not do any of this array nonsense and just make like 50 if statements
+
+// CHECK IF RNG FORMULA IS EVEN PRODUCING ANYTHING OF IR ITS FOR LOOP
+// ok 1, its the for loop, 2, I forgor to divide by 3 so it's been generating 1-9
+// also still not grouping colours values together
+// FIGURED IT OUT, NEEDED NESTED ARRAYS
+
+}
 
 // https://www.blackbox.ai/share/31b2fe95-2421-4168-989e-7874c2c9bc0e animation code lol
 
