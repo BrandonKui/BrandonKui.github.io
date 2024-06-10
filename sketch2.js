@@ -5,12 +5,10 @@ var rightColor
 var rngValue1
 var rngValue2
 
-var Shotaro = [[0,0,0], [64,64,64], [32,64,128]]
-// in order, joker, metal, trigger
-var Phillip = [[64,192,128], [255,192,64], [255,255,255]]
-// in order, cyclone, luna, fang
-// var randomNumberCache =[]
-// needed to randomize numbers, since I'm generating 2 of them
+var Shotaro = [[0,0,0], [16,32,16], [16,32,64]]
+// black, green, dark blue
+var Phillip = [[64,96,128], [255,192,0], [192,192,192]]
+// light blue, yellow, white
 
 // TODO: web preview, clickable text
 
