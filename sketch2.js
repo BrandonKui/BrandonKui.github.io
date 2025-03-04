@@ -7,7 +7,7 @@ var rngValue2
 
 var Shotaro = [[0,0,0], [16,32,16], [16,32,64]]
 // black, green, dark blue
-var Phillip = [[64,96,128], [255,192,0], [192,192,192]]
+var Phillip = [[64,96,128], [255,192,0], [255,255,255]]
 // light blue, yellow, white
 
 // TODO: web preview, clickable text
