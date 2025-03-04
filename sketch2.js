@@ -73,7 +73,7 @@ function windowResized() {
     textAlign(CENTER)
     fill(255,0,255)
     textFont("Consolas")
-    text("Design Student", windowWidth/2, (windowHeight/2)+25)
+    text("Eternal Student", windowWidth/2, (windowHeight/2)+25)
     // DESCRIPTION
 
   // PORTFOLIO
@@ -82,6 +82,8 @@ function windowResized() {
     textAlign(LEFT)
     text('◀ Portfolio', 50, 50)
     describe("Click here to go to portfolio")
+    // TODO: Make this change colour on hover for feedback
+
   // PORTFOLIO
 
   // RESUME
@@ -90,6 +92,8 @@ function windowResized() {
     textAlign(RIGHT)
     text('About Me ▷', windowWidth-50, windowHeight-25)
     describe("Click here to go to about me")
+     // TODO: Make this change colour on hover for feedback
+
   // RESUME
     
   }
@@ -183,7 +187,7 @@ function windowResized() {
     text("Maya, Blender, Python", windowWidth/2, (windowHeight/2)+170)
     text("MISCELLANEOUS SKILLS", windowWidth/2, (windowHeight/2)+195)
     text("Photography, Traditional Illustration, Metal and Wood Fabrication", windowWidth/2, (windowHeight/2)+210)
-    describe("A graphic design student studying at OCAD U, proficient in the adobe suite, affinity suite, with various other design skills. Please click the hyperlink below to view a more detailed pdf")
+    describe("A graphic design student studying at OCAD U, proficient in the adobe suite, affinity suite, coreldraw, and other software. Please click the hyperlink below to view a more detailed pdf")
     // ABOUT
   }
 
