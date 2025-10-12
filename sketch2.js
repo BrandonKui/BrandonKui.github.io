@@ -65,15 +65,23 @@ function windowResized() {
     fill(255,64,192)
     textFont("Consolas")
     text("Brandon Kui", windowWidth/2, windowHeight/2)
-    describe("Brandon Kui, Design student")
+    describe("Brandon Kui, graphic design, Brandon.Kui.Work@gmail.com")
  //  NAME
 
     // DESCRIPTION
     textSize(16)
     textAlign(CENTER)
-    fill(255,0,255)
+    fill(255,64,192)
     textFont("Consolas")
-    text("Eternal Student", windowWidth/2, (windowHeight/2)+25)
+    text("graphic design", windowWidth/2, (windowHeight/2)+25)
+    // DESCRIPTION
+
+    // DESCRIPTION
+      textSize(16)
+      textAlign(CENTER)
+      fill(255,64,192)
+      textFont("Consolas")
+      text("Brandon.Kui.Work@gmail.com", windowWidth/2, (windowHeight/2)+50)
     // DESCRIPTION
 
   // PORTFOLIO
@@ -178,7 +186,7 @@ function windowResized() {
     fill(0,0,0)
     text("You can view or download a more in-depth resume by scrolling down and clicking on 'resume'.", windowWidth/2, (windowHeight/2)+0)
     text("Click anywhere else to return to the homescreen.", windowWidth/2, (windowHeight/2)+25)
-    text("Graphic designer with a varied skillset. Currently studying at OCADU.", windowWidth/2, (windowHeight/2)+50)
+    text("Former OCAD University student.", windowWidth/2, (windowHeight/2)+50)
     text("PROFICIENT", windowWidth/2, (windowHeight/2)+75)
     text("Adobe Suite, Affinity Suite", windowWidth/2, (windowHeight/2)+90)
     text("LEARNING", windowWidth/2, (windowHeight/2)+115)
@@ -187,7 +195,7 @@ function windowResized() {
     text("Maya, Blender, Python", windowWidth/2, (windowHeight/2)+170)
     text("MISCELLANEOUS SKILLS", windowWidth/2, (windowHeight/2)+195)
     text("Photography, Traditional Illustration, Metal and Wood Fabrication", windowWidth/2, (windowHeight/2)+210)
-    describe("A graphic design student studying at OCAD U, proficient in the adobe suite, affinity suite, coreldraw, and other software. Please click the hyperlink below to view a more detailed pdf")
+    describe("Former OCAD University student, proficient in the adobe suite, affinity suite, coreldraw, and other software. Please click the hyperlink below to view a more detailed pdf")
     // ABOUT
   }
 
